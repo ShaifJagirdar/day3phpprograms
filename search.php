@@ -1,8 +1,14 @@
 <?php
 
 $num = [1,2,4,6,3,5];
-
 $search = 2;
+if(in_array($search, $num))
+{
+echo "Found in array<br>";
+}
+else{
+    echo "Not found<br>";
+}    
 $found = false;
 
 foreach($num as $n){
