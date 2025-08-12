@@ -8,4 +8,20 @@ $products = [
     ["P004", "Monitor", 300.00, 15]
 ];
 
-print_r($products);
+?>
+
+<table border="1">
+    <tbody>
+        <tr>
+            <?php
+            foreach($products as $row){
+                echo "<tr>";
+                foreach($row as $eachdata){
+                    echo "<td>" . $eachdata ."</td>";
+                }
+                echo "</tr>";
+            }
+            ?>
+        </tr>
+    </tbody>
+</table>
